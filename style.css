@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: pink;
+}
+section .main-bt{
+	margin: 0 auto;
+	position: relative;
+	width: 50px;
+	height: auto;
+	top: 40%;
+}
+section .main-bt .play{
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 4vh;
+	color: white;
+	background-color: #09E2F5;
+	font-weight: 700;
+	position: relative;
+	border-radius: 50%;
+	outline: none;
+	border: 2px #3E7ADE solid;
+	cursor: pointer;
+	z-index: 10000000;
+	margin: 0 auto;
+}
+section .main-bt .play i {
+	font-size: 5vh;
+	text-align: center;
+	padding-top: 5px; 
+}
+section .main-bt .play i:hover{
+	color: red;
+}
+section .main-icons{
+	position: relative;
+	text-align: center;
+	width: 130px;
+	height: auto;
+	margin: 0 auto;
+	top: 35%;
+}
+section .main-icons img{
+	position: relative;
+	width: 130px;
+	height: 130px;
+	border-radius:50%;
+}
+.banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+.banner .blocks {
+	position: relative;
+	width: 5vw;
+	height: 5vh;
+	display: block;
+	animation: animate 0.75s ease-in-out forwards;
+}
+.banner .blocks:nth-child(even){
+	 animation: animate 1s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n + 3){
+	 animation: animate 2.5s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n + 7){
+	 animation: animate 1.5s ease-in-out forwards;
+}
+@keyframes animate 
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale(0) translateY(1000px);
+	}
+	50%
+	{
+		opacity: 1;
+		/*background: url(https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.0-9/131478406_854005972014277_3965542410792259888_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=ohMGg6CI0a4AX_7KQwb&_nc_ht=scontent.fsgn5-1.fna&oh=f7345d4554a81e14a09fd1c97b8e36c1&oe=6034F092);*/
+		background: url(trinh.jpg);
+		background-position: center;
+		background-attachment: fixed;
+	}
+	100%
+	{
+		opacity: 1;
+		transform: scale(1) translateY(0px);
+/*		background: url(https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.0-9/131478406_854005972014277_3965542410792259888_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=ohMGg6CI0a4AX_7KQwb&_nc_ht=scontent.fsgn5-1.fna&oh=f7345d4554a81e14a09fd1c97b8e36c1&oe=6034F092);*/
+		background: url(trinh.jpg);
+		background-position: center;
+		background-attachment: fixed;
+	}
+}

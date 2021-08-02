@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dành tặng cho Trinh cute :>>>
+        </title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width,initial-scale =1" name="viewport"/>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        </link>
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/b50f45bdb4.js">
+        </script>
+    </head>
+    <body>
+        <section>
+            <div class="main-icons">
+                <a href="#">
+                    <!-- <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-9/83056136_789294218248659_8252295006564384768_n.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=TCbC3aQPfWkAX-pdl08&_nc_ht=scontent.fsgn5-6.fna&oh=aebe7cd154936aba60538dec986139e2&oe=6034C45F">
+                    </img> -->
+                    <img src="girl1.jpg">
+                    </img>
+                </a>
+            </div>
+            <div class="main-bt">
+                <button class="play" onclick="effect()">
+                    <i class="fas fa-play-circle">
+                    </i>
+                </button>
+            </div>
+            <div class="banner">
+                <div class="blocks">
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function effect()
+            {
+			const banner = document.getElementsByClassName('banner')[0];
+			const blocks = document.getElementsByClassName('blocks');
+			for (var i = 1; i < 400; i++) 
+				{
+				banner.innerHTML += "<div class='blocks'></div>";
+				blocks[i].style.animationDelay = `${i * 0.03}s`;
+				}
+			}
+        </script>
+    </body>
+</html>
